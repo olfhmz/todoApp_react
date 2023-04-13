@@ -1,0 +1,26 @@
+.input, .addButton, .deletecompleted, .sortBtn {
+	padding: 5px 10px;
+	border-radius: 5px;
+	border: none;
+}
+
+/* input */
+.input {
+	width: 70%;
+}
+
+/* buttons */
+.addButton, .deletecompleted, .sortBtn {
+	background-color: gray;
+	color: #fff;
+}
+
+.addButton:hover, .addButton:focus, 
+.deletecompleted:hover, .deletecompleted:focus,
+.sortBtn:hover, .sortBtn:focus {
+	background-color: rgb(166, 166, 166);
+}
+
+.sortBtn {
+	margin: 10px 0 10px 10px;
+}
