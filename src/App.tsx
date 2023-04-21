@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="wrapper">
         <InputForm />
-        <TodoList arrTodo={store.todoSlice.arrTodo} />
+        <TodoList arrTodo={store.todoSlice.filterTodo} />
     </div>
   );
 }

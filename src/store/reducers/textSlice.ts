@@ -5,6 +5,7 @@ const initTextSlice: ITodo = {
 	id: '',
 	task: '',
 	completed: false,
+	group: 'none'
 }
 
 const todoSlice = createSlice({

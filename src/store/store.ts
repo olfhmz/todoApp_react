@@ -1,10 +1,12 @@
 import { combineReducers, configureStore } from "@reduxjs/toolkit";
 import todoSlice from "./reducers/todoSlice";
 import textSlice from "./reducers/textSlice";
+// import groupSlice from "./reducers/groupSlice";
 
 const rootReducer = combineReducers({
 	todoSlice,
-	textSlice
+	textSlice,
+	// groupSlice
 })
 
 export const setupStore = () => {

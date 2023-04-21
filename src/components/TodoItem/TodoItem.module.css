@@ -37,3 +37,7 @@ input:checked + h2 {
 .changeBtn:hover {
 	background-color: rgb(173, 173, 173);
 }
+
+/* group info
+.groupInfo {
+} */

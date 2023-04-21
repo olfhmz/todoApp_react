@@ -1,8 +1,7 @@
-import { ITodos} from '../../store/reducers/todoSlice';
+import ITodo from '../../models/ITodo';
 import TodoItem from '../TodoItem/TodoItem';
 
-function TodoList(props: ITodos) {
-
+function TodoList(props: {arrTodo: ITodo[]}) {
 	return (
 		<ul>
 			{

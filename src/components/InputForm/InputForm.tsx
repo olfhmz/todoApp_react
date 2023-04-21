@@ -1,6 +1,8 @@
 import { useAppDispatch, useAppSelector } from '../../store/hooks';
+// import { addGroup } from '../../store/reducers/groupSlice';
 import { setText } from '../../store/reducers/textSlice';
-import { addTodo, deletecompleted, sortBycomplet, sortByTask } from '../../store/reducers/todoSlice';
+import { addGroup, addTodo, deletecompleted, sortBycomplet, sortByTask } from '../../store/reducers/todoSlice';
+import GroupSelect from '../GroupSelect/GroupSelect';
 import classes from './InputForm.module.css'
 
 function InputForm() {
@@ -43,6 +45,15 @@ function InputForm() {
 									dispatch(sortBycomplet());}}>
 						complet
 					</button>
+			</label>
+
+			<label>
+				<span>filter by group: </span>
+				<GroupSelect flag='sort'/>
+				<button	onClick={(e) => {e.preventDefault();
+										let newGroup = prompt('groupName: ');
+										if (newGroup)	dispatch(addGroup(newGroup));}}
+						>add group</button>
 			</label>
 
 		</form>

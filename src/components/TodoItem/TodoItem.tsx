@@ -1,6 +1,7 @@
 import { ITodoProps } from "../../models/ITodo";
 import { useAppDispatch } from "../../store/hooks";
 import { changeTodo, removeTodo, toggleTodoComplete } from "../../store/reducers/todoSlice";
+import GroupSelect from "../GroupSelect/GroupSelect";
 import classes from './TodoItem.module.css';
 
 function TodoItem(todoProps: ITodoProps) {
@@ -20,8 +21,12 @@ function TodoItem(todoProps: ITodoProps) {
 					<h2 className={classes.taskText}>{todo.task}</h2>
 				</label>
 			</div>
-		
+
 			<div>
+				<label>
+					<span>group : </span>
+					<GroupSelect flag="todoGroup" todo={todo}/>
+				</label>
 				<button	className={classes.changeBtn}
 						onClick={(e) => {let newTask = prompt('Как изменим? ', '');
 										if (newTask)	
