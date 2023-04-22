@@ -1,4 +1,4 @@
-.input, .addButton, .deletecompleted, .sortBtn {
+.input, .addButton, .deletecompleted, .sortBtn, .groupBtn {
 	padding: 5px 10px;
 	border-radius: 5px;
 	border: none;
@@ -10,17 +10,18 @@
 }
 
 /* buttons */
-.addButton, .deletecompleted, .sortBtn {
+.addButton, .deletecompleted, .sortBtn, .groupBtn {
 	background-color: gray;
 	color: #fff;
 }
 
 .addButton:hover, .addButton:focus, 
 .deletecompleted:hover, .deletecompleted:focus,
-.sortBtn:hover, .sortBtn:focus {
+.sortBtn:hover, .sortBtn:focus,
+.groupBtn:hover, .groupBtn:focus {
 	background-color: rgb(166, 166, 166);
 }
 
-.sortBtn {
+.sortBtn, .groupBtn {
 	margin: 10px 0 10px 10px;
 }

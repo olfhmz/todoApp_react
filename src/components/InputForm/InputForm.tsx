@@ -50,9 +50,10 @@ function InputForm() {
 			<label>
 				<span>filter by group: </span>
 				<GroupSelect flag='sort'/>
-				<button	onClick={(e) => {e.preventDefault();
-										let newGroup = prompt('groupName: ');
-										if (newGroup)	dispatch(addGroup(newGroup));}}
+				<button	className={classes.groupBtn}
+						onClick={(e) => {e.preventDefault();
+									let newGroup = prompt('groupName: ');
+									if (newGroup)	dispatch(addGroup(newGroup));}}
 						>add group</button>
 			</label>
 
